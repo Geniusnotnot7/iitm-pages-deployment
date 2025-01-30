@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My GitHub Page</title>
 </head>
 <body>
-    <h1>Welcome to My Portfolio</h1>
-    <p>This page showcases my work and projects.</p>
-    <p>Contact me at: <!--email_off-->23f2004859@ds.study.iitm.ac.in<!--/email_off--></p>
+    <h1>Welcome to My GitHub Page!</h1>
+    <p>Contact me at: <span id="email"></span></p>
+
+    <script>
+        // Dynamically insert the email address
+        const email = "23f2004859" + "@" + "ds.study.iitm.ac.in";
+        document.getElementById("email").textContent = email;
+    </script>
 </body>
 </html>
